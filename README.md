@@ -43,4 +43,19 @@ The [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) contains 60,
 
 ## 🏗️ Model Architecture
 
+![Image](https://github.com/user-attachments/assets/fd5b6533-5845-44b5-a5c1-3847c40038f4)
+
+```python
+Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),
+    MaxPooling2D(2, 2),
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+    Flatten(),
+    Dense(64, activation='relu'),
+    Dense(10, activation='softmax')
+])
+
+
+
 
